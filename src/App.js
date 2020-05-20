@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, BrowserRouter, NavLink } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 //import logo from './logo.svg';
 import './App.css';
 import './style.css';
@@ -9,6 +9,7 @@ import Routes from './util/routes';
 function App() {
   return (
     <div class='grid-2'>
+      <code>this is yousef</code>
       <BrowserRouter>
         <Sidebar />
         <div class='section-2'>
