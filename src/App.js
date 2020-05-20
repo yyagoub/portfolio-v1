@@ -9,7 +9,6 @@ import Routes from './util/routes';
 function App() {
   return (
     <div class='grid-2'>
-      <code>this is yousef</code>
       <BrowserRouter>
         <Sidebar />
         <div class='section-2'>
