@@ -1,24 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Link, BrowserRouter, NavLink } from 'react-router-dom';
+//import logo from './logo.svg';
 import './App.css';
+import './style.css';
+import Sidebar from './components/sidebar/Sidebar';
+import Routes from './util/routes';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div class='grid-2'>
+      <BrowserRouter>
+        <Sidebar />
+        <div class='section-2'>
+          <Routes />
+          {/* <h2>About</h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+          quas sint et nihil iusto eius nostrum sit error, repellat optio
+          quisquam! Magnam dolore iusto cumque. Nostrum error iste neque
+          maiores.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h2>Skills</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in
+          maiores autem quidem obcaecati excepturi! Cupiditate eaque itaque
+          magni voluptatibus neque nobis est dolor? Atque sunt minus ipsa
+          asperiores. At.
+        </p>
+        <h2>Projects</h2>
+        <a href='#'>Project 1</a>
+        <a href='#'>Project 2</a>
+        <a href='#'>Project 3</a>
+        <a href='#'>Project 4</a>
+        <a href='#'>Project 5</a>
+        <h2>Contact</h2>
+        <p>myEmail@email.com</p> */}
+        </div>
+      </BrowserRouter>
     </div>
   );
 }
